@@ -14,6 +14,8 @@ int main(){
 
     cout << movie_rating[0][1] << endl;
 
+    cout << movie_rating.at(0).at(0) << endl;
 
+    
     
 }
