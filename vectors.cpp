@@ -33,6 +33,8 @@ int main(){
         {7, 8, 9}
     };
 
+    cout << "\nOutput using at " << vect.at(0).at(1) << endl;
+
     for (int i = 0; i < vect.size(); i++)
     {
         for (int j = 0; j < vect[i].size(); j++)
