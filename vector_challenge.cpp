@@ -17,6 +17,7 @@ int main(){
     vector2.push_back(200);
     
     cout << "\nVector 1 " << vector2.at(0)<< " " << vector2.at(1)<< " " << vector2.size() <<endl;
+    cout << "\nVector 1 contains " << vector2.size() << " elements" << endl;
 
     vector <vector<int> > vector2d;
     vector2d.push_back(vector1);
