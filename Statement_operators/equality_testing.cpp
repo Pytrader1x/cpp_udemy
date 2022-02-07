@@ -38,4 +38,26 @@ int main(){
     cout << noboolalpha; // back to 0 1
     cout << (num1==num2) << endl;
 
+
+    // determine if need to wear a coat
+    bool wear_coat{false};
+    double temperature {};
+    int wind_speed{};
+    cout << boolalpha;
+    const int wind_speed_for_coat {25}; // wind over this requires coat
+    const double temperature_for_coat {5}; // temp below this requires coat
+    cout << "++++++++++++" << endl;
+    cout << "\nEnter current temp in c";
+    cin >> temperature;
+    cout << "\nEnter current wind speed in mph";
+    cin >> wind_speed;
+
+    wear_coat = (temperature < temperature_for_coat || wind_speed > wind_speed_for_coat);
+    cout <<"Need a coat using OR? " << wear_coat << endl;
+
+    // both must be true
+    wear_coat = (temperature < temperature_for_coat && wind_speed > wind_speed_for_coat);
+    cout <<"Need a coat using OR? " << wear_coat << endl;
+
+
 }
