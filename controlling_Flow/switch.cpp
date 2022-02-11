@@ -33,8 +33,18 @@ int main(){
 
         case 'd':
         case 'D':
-            cout << "you need 60" << endl;
-            break;
+        {
+            char confirm {};
+            cout << "Are you sure? Y / N ";
+            cin >> confirm;
+            if(confirm == 'Y'|| confirm == 'y'){
+                cout << "you need 60, no studying though" << endl;
+            }else if(confirm == 'n' || confirm == 'N')
+                cout << "Good go study" << endl;
+                break;
+            
+        }
+            
         default:
             cout << "Not valid letter" << endl;
             break;
