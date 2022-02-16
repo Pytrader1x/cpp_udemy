@@ -17,6 +17,20 @@ int main(){
         cout << i << endl;
         i++;
     }
+
+
+    int number{};
+    cout << "Enter pos int less than 100:";
+    cin >> number;
+
+    while(number>=100){
+        cout << "Enter pos int less than 100:";
+        cin >> number;
+    }
+    cout<< "Thanks";
+
+
+
   
  
 
