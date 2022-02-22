@@ -7,6 +7,10 @@ int main(){
     
     vector <int> vector1; // auto set to zero
     vector <int> vector2;
+    vector <int> vector3;
+
+    vector3.insert(vector3.end(), {1, 5, 6, 7, 8, 9});
+    cout << vector3.at(1);
 
     vector1.push_back(10);
     vector1.push_back(20);
@@ -22,6 +26,7 @@ int main(){
     vector <vector<int> > vector2d;
     vector2d.push_back(vector1);
     vector2d.push_back(vector2);
+    vector2d.push_back(vector3);
 
     cout << "---------------" << endl;
     for (int i = 0; i < vector2d.size(); i++)
