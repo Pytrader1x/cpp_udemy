@@ -74,7 +74,7 @@ int main(){
                 
             };
 
-            cout << "largest: " << largest <<endl;
+            cout << "largest:  " << largest <<endl;
         }
 
     }while(selection !='Q');
