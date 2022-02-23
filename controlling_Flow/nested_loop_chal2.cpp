@@ -6,7 +6,7 @@ using namespace std;
 int main(){
 
 
-    vector<int> numbers {9, 2, 3, 7, 9, 12};
+    vector<int> numbers {};
     char selection{};
     
     do{
@@ -48,6 +48,12 @@ int main(){
 
             cout << "Mean: " << total/count <<endl;
         }else if(selection =='S'){
+
+            if (numbers.size() == 0){
+                cout << "Empty array: " <<endl;
+                cin >> numbers[0];
+                
+            }
             
             double total = 0;
             int smallest = numbers[0];
