@@ -40,7 +40,7 @@ int main() {
     });
     std::cout << "In Lower Case : " << entered_word << std::endl;
 
-
+  
    
    
    for(char i_char: entered_word){
@@ -49,7 +49,14 @@ int main() {
        
        if(iterator_char != char_vector.end()){
         int index = iterator_char - char_vector.begin();
-        cout << i_char << " is index: " << index << endl;      
+        if(index <=3){
+
+            cout << char_vector[index-1] << std::endl;
+
+        }else{
+            cout << char_vector[index+1] << std::endl;
+        }
+        // cout << i_char << " is index: " << index << endl;      
         }
        
    
