@@ -28,7 +28,35 @@ int main(){
 
    //cpp string is better
 
+   char first_name[20];
+   char last_name[20];
+   char full_name[50];
+   char temp_name[50];
 
+//    cout << "Please enter first name, last name";
+//    cin >> first_name;
+//    cin >> last_name;
 
+//    cout << "Hello, " << first_name << " Your name has " << strlen(first_name) << " characters" << endl;
+//    cout << " And your last name " << last_name << " has " << strlen(last_name) << " characters" << endl;
+//    strlen returns size_t unsigned int
+    // strcpy(full_name, first_name); // copy string
+    // strcat(full_name," ");
+    // strcat(full_name,last_name);
+    // cout << "Your full name is " << full_name << endl;
+   
+    cout << "Enter your full name";
+    cin.getline(full_name, 50);
+    cout << "your full name " << full_name << endl;
 
+    cout << "================================================" << endl;
+
+    strcpy(temp_name, full_name);
+    if(strcmp(temp_name, first_name) == 0){
+        cout << temp_name << " and " << full_name << " are the same"<< endl;
+    }else{
+        cout << temp_name << " and " << full_name << " are not the same"<< endl;
+
+    }
+        
 }
