@@ -31,7 +31,7 @@ int main() {
 
    string entered_word="";
    cout << "Enter a word" << endl;
-   entered_word = "Hello";
+   entered_word = "aHello";
    string lower_entered_word = "";
 
    // convert string to back to lower case
@@ -42,29 +42,62 @@ int main() {
 
   
    
-   
+   string encrypted_string = "";
    for(char i_char: entered_word){
 
        vector<char>::iterator iterator_char = std::find(char_vector.begin(), char_vector.end(), i_char);
        
        if(iterator_char != char_vector.end()){
         int index = iterator_char - char_vector.begin();
-        if(index <=3){
+        if(index ==0){
 
-            cout << char_vector[index-1] << std::endl;
+            // cout << char_vector[char_vector.size()-1] << std::endl;
+            encrypted_string +=char_vector[char_vector.size()-1];
 
         }else{
-            cout << char_vector[index+1] << std::endl;
+            // cout << char_vector[index-1] << std::endl;
+            encrypted_string +=char_vector[index-1];
         }
         // cout << i_char << " is index: " << index << endl;      
         }
+        cout << encrypted_string << std::endl;
+        }
+        
+    
+
+    //unencrypt
+    string un_encrypted_string = "";
+    for(char i_char: encrypted_string){
+
+    vector<char>::iterator iterator_char = std::find(char_vector.begin(), char_vector.end(), i_char);
+    
+    if(iterator_char != char_vector.end()){
+
+        int index = iterator_char - char_vector.begin();
+        if(index ==25){
+
+            // cout << char_vector[char_vector.size()-1] << std::endl;
+            un_encrypted_string +="a";
+
+        }else{
+            // cout << char_vector[index-1] << std::endl;
+            un_encrypted_string +=char_vector[index+1];
+        }
+        
+    // cout << i_char << " is index: " << index << endl;      
+    }
+        
+
+
+
        
    
    }
 
-
-
-   
+   cout << "Unencrypted again: " <<un_encrypted_string << endl;
 
 
 }
+   
+
+
