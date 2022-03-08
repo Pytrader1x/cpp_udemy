@@ -17,12 +17,12 @@ int main() {
            char_vector.push_back(i);
 
        }
-       cout << i << endl;
+    //    cout << i << endl;
    }
    
 
    for(char i:char_vector){
-       cout << i << endl;
+    //    cout << i << endl;
        
    }
 
@@ -31,7 +31,7 @@ int main() {
 
    string entered_word="";
    cout << "Enter a word" << endl;
-   entered_word = "aHello";
+   cin >> entered_word;//"aHello";
    string lower_entered_word = "";
 
    // convert string to back to lower case
