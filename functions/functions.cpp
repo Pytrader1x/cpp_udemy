@@ -5,6 +5,8 @@
 #include <map>
 #include <algorithm>
 #include <cmath>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 double num(){
@@ -34,11 +36,34 @@ double num(){
     return cubed_root_num;
 }
 
+int random_num_gen(){
+
+    int random_number{};
+    size_t count{10};
+    int min {1};
+    int max {6};
+
+
+    cout << "Rand_max on my system is: " << RAND_MAX << endl;
+    srand(time(nullptr));
+    
+    for(size_t i{1};i<=count;++i){
+        random_number = rand() % max + min;
+        // cout << random_number << endl;
+    }
+    cout << "Random number is: " <<random_number << endl;
+    return 0;
+}
+
+
 int main() {
 
-    num();
+    double output{};
+
+    output = num();
+    cout << "The output is " << output << endl;
     
-  
+    random_num_gen();
 
 
 
