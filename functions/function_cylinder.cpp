@@ -17,7 +17,6 @@ double calc_volume(double area, double height){
 }
 
 
-
 int main() {
 
     double radius{};
