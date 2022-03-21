@@ -33,7 +33,7 @@ double f_to_c(double fahrenheit_temperature){
 }
 
 double f_to_k(double fahrenheit_temperature){
-
+    //default arguments should always be at the end of function call
     double kelvin_temperature {};
     kelvin_temperature = (5/9)*(fahrenheit_temperature-32)+273;
     return kelvin_temperature;
