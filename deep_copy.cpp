@@ -39,7 +39,8 @@ Deep::Deep(const Deep &source)
         // source.data so we take the
         //  data as value rather than via pointer
 
-        cout << "Copy constructor - Deep copy " << data << endl;
+        // cout << "Copy constructor - Deep copy " << data << endl;
+
     }
 
 Deep::~Deep(){
